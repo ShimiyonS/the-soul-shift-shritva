@@ -1470,18 +1470,18 @@ header.main-header .header-sticky.active {
 	z-index: 1;
 }
 
-.bg-overlay-image::after {
+/* .bg-overlay-image::after {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: linear-gradient(rgba(116, 80, 165, 0.62),
-			rgba(116, 80, 165, 0.62));
+	/* background: linear-gradient(rgba(116, 80, 165, 0.62),
+			rgba(116, 80, 165, 0.62)); 
 	transition: all 0.4s ease-in-out;
-	z-index: 1;
-}
+	z-index: 1; */
+/* } */
 
 /* .bg-overlay-image::before {
 	content: '';

@@ -16,7 +16,7 @@ import thearerhythm from "../images/icons/The-ARE-Rhythm.svg"
 import thesoulrootcodex from "../images/icons/The-Soul-Root-Codex.svg"
 import bgImage4 from "../images/images/image4.png"
 import quoteIcon from "../images/icons/quoteicon.png";
-import image5 from "../images/images/new_image.png";
+import image5 from "../images/images/new-image.png";
 import Fotter from '../Components/Fotter';
 import { blogs } from '../Data/Blogs';
 
