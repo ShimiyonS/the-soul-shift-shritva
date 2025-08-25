@@ -6,6 +6,8 @@ import bgimage2 from "../images/images/about-us-img-3.jpg"
 import bgImage4 from "../images/images/about-us-img-4.jpg"
 // import bgImage5 from "../images/images/about-us-img-5.jpg";
 import bgImage5 from "../images/images/new-image.png";
+import bgImage2 from "../images/images/bg-image.png"
+
 
 
 import certificationImg1 from "../images/images/certification1.png"
@@ -240,32 +242,19 @@ const About = () => {
                 </div>
             </div>
 
-            <section className="text-center text-white position-relative">
-                {/* Background Image */}
-                <div className="section-row bg-overlay-image position-relative m-0">
-                    <img
-                        src={bgImage5}
-                        alt="Work With Me Background"
-                        className="w-100"
-                    />
-
-                    {/* Overlay Content */}
-                    <div className="col-lg-12 overlay-image-container-2 position-absolute top-50 start-50 translate-middle text-center">
-                        <h2 className="section-text">
-                            If something in you feels seen here, <br />
-                            we have already met.
-                        </h2>
-
-                        <h3 className="section-text work-with-me mt-3">Work With Me</h3>
-
-                        <div className="book-btn mt-4">
-                            <a href="/contact" className="btn-default">
-                                Book a Session
-                            </a>
-                        </div>
+            <div className="row section-row align-items-center overlay-image">
+                <img src={bgImage2} alt="" />
+                <div className="col-lg-12 overlay-image-container">
+                    <h2 className="text-anime-style-2" data-cursor="-opaque">
+                        If something in you feels seen here, we have already met.
+                    </h2>
+                    <div className="book-btn" style={{ marginTop: "3rem" }}>
+                        <a href="/contact" className="btn-default">
+                            Book a Session
+                        </a>
                     </div>
                 </div>
-            </section>
+            </div>
             <section>
                 <div className='container'>
                     <div className='certification'>
