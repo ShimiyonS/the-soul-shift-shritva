@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../Components/Header'
-import Footer from '../Components/Footer'
 import aboutImage from "../images/images/about-us-img-1.jpg";
 import bgimage1 from "../images/images/about-us-img-2.jpg"
 import bgimage2 from "../images/images/about-us-img-3.jpg"
