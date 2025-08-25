@@ -115,16 +115,16 @@ const Footer = () => {
                     {/* Footer Bottom */}
                     <div className="col-lg-12">
                         <div className="footer-copyright">
-                            <div className="footer-copyright-text">
+                            <div className="footer-copyright-text text-align-center">
                                 <p>Copyright © 2025 Shritva - All rights reserved.</p>
                             </div>
-                            <div className="footer-privacy-policy">
+                            {/* <div className="footer-privacy-policy">
                                 <ul>
                                     <li><a href="/">Privacy policy</a></li>
                                     <li><a href="/">Terms and Conditions</a></li>
                                     <li><a href="/">Help</a></li>
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 

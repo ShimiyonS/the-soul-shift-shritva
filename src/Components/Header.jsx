@@ -85,7 +85,7 @@ const Header = ({ title, subtitle, description, buttons = [], isHome = false }) 
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="/blogs">Blog</a>
+                                <a className="nav-link" href="/blogs">Blogs</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/contact">Contact</a>

@@ -3267,7 +3267,7 @@ h2 {
 .footer-copyright {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	gap: 20px;
 	border-top: 1px solid var(--dark-divider-color);
 	margin-top: 50px;
@@ -6717,9 +6717,10 @@ h2 {
 
 @media only screen and (max-width: 767px) {
 
-	.new-about-us{
+	.new-about-us {
 		padding: 30px 0 15px;
 	}
+
 	.new-about-image-title {
 		position: relative;
 		/* or keep absolute if needed */
@@ -6732,7 +6733,7 @@ h2 {
 		text-align: center;
 		/* optional: center align on mobile */
 	}
-	
+
 	.new-about-image-title h2 {
 		font-size: 2em;
 		color: #552A7A !important;
@@ -7588,60 +7589,88 @@ h2 {
 	}
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px) {
 	.new-about-images {
-    padding-left: 0;
-    min-height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+		max-width: 100%;
+		padding-left: 10px;
+		min-height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
 
-  /* Card */
-  .new-about-card {
-    position: relative;  /* remove absolute */
-    bottom: auto;
-    left: auto;
-    width: 100%;          /* make card flexible */
-    max-width: 320px;    /* keep it neat */
-    margin: 20px auto;   /* center card */
-  }
+	.new-about-social-icons a i {
+		width: 30px;
+		height: 30px;
+		font-size: 14px;
+	}
 
-  /* Image Title (make normal text instead of vertical) */
-  .new-about-image-title {
-    position: relative;
-    top: auto;
-    right: auto;
-    transform: none;
-    writing-mode: horizontal-tb;
-    margin-top: 15px;
-    text-align: center;
-    height: auto;
-  }
+	.about-card-design {
+		top: 80px;
+		left: 0;
+	}
 
-  .new-about-image-title h2 {
-    font-size: 1.8em;  /* smaller for mobile */
-    -webkit-text-stroke: 0;
-  }
+	/* Card */
+	.new-about-card {
+		order: 2;
+		position: relative;
+		/* remove absolute */
+		bottom: auto;
+		left: auto;
+		width: 100%;
+		/* make card flexible */
+		max-width: 320px;
+		/* keep it neat */
+		margin: 100px auto;
+		
+		/* center card */
+	}
 
-  /* Social Icons */
-  .new-about-card-social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-  }
+	/* Image Title (make normal text instead of vertical) */
+	.new-about-image-title {
+		order: 1;
+		position: absolute;
+		top: 0;
+		right: 0;width: 100%;
+		transform: none;
+		writing-mode: horizontal-tb;
+		margin-top: 15px;
+		text-align: center;
+		height: auto;
+	}
 
-  .new-about-social-icons {
-    margin-top: 10px;
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-  }
+	.new-about-image-title h2 {
+		font-size: 1.8em;
+		/* smaller for mobile */
+		-webkit-text-stroke: 0;
+	}
 
-  .about-social-icons {
-    font-size: 18px;   /* smaller icons for mobile */
-  }
+	/* Social Icons */
+	.new-about-card-social {
+		display: flex;
+		padding: 14px;
+
+		align-items: center;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.new-about-card-social span {
+		font-size: 12px;
+	}
+
+	.new-about-social-icons {
+		margin-top: 10px;
+		display: flex;
+		gap: 4px;
+		justify-content: center;
+	}
+
+	.about-social-icons {
+		font-size: 18px;
+		/* smaller icons for mobile */
+	}
 }
 
 /* about us css */

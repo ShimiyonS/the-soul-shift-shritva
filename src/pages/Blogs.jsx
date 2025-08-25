@@ -7,7 +7,7 @@ const Blogs = () => {
     console.log("blogs,", blogs)
     return (
         <>
-            <Header title="Blogs" />
+            <Header title="Explore Our Blogs" />
             <section>
                 <div className='blog_page container'>
                     <div class="page-blog">
