@@ -90,7 +90,7 @@ const Contact = () => {
                                     <h2 className="text-anime-style-2" data-cursor="-opaque">
                                         Get in touch <span>with us</span>
                                     </h2>
-                                    <p>
+                                    <p className='text-black'>
                                         We're here to support your journey to better health and
                                         well-being. Reach out today to ask questions, schedule a
                                         consultation.
@@ -105,7 +105,7 @@ const Contact = () => {
                                         </div>
                                         <div className="contact-item-content">
                                             <h3>contact us</h3>
-                                            <p>
+                                            <p className='text-black'>
                                                 <a href="tel:761853398">+(1) 761-853-398</a>
                                             </p>
                                         </div>
@@ -117,7 +117,7 @@ const Contact = () => {
                                         </div>
                                         <div className="contact-item-content">
                                             <h3>email us</h3>
-                                            <p>
+                                            <p className='text-black'>
                                                 <a href="mailto:info@domain.com">info@domain.com</a>
                                             </p>
                                         </div>
@@ -129,7 +129,7 @@ const Contact = () => {
                                         </div>
                                         <div className="contact-item-content">
                                             <h3>location</h3>
-                                            <p>123 High Street 123</p>
+                                            <p className='text-black'>123 High Street 123</p>
                                         </div>
                                     </div>
 
@@ -139,7 +139,7 @@ const Contact = () => {
                                         </div>
                                         <div className="contact-item-content">
                                             <h3>open</h3>
-                                            <p>Mon-Sat(09 - 21:00)</p>
+                                            <p className='text-black'>Mon-Sat(09 - 21:00)</p>
                                         </div>
                                     </div>
                                 </div>
