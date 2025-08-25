@@ -8,7 +8,9 @@ import services5 from "../images/images/serviceicon5.svg"
 import services6 from "../images/images/serviceicon6.svg"
 import services7 from "../images/images/serviceicon7.svg"
 import services8 from "../images/images/serviceicon8.svg"
-import aboutusimage5 from "../images/images/about-us-img-5.jpg"
+// import aboutusimage5 from "../images/images/about-us-img-5.jpg"
+import aboutusimage5 from "../images/images/bg-image.png"
+
 import Fotter from '../Components/Fotter';
 // import bgImage from "../images/images/images1.png"
 // import bgImage2 from "../images/images/images2.png"
@@ -19,7 +21,8 @@ import thearerhythm from "../images/icons/The-ARE-Rhythm.svg"
 import thesoulrootcodex from "../images/icons/The-Soul-Root-Codex.svg"
 import bgImage4 from "../images/images/image4.png"
 import quoteIcon from "../images/icons/quoteicon.png";
-import image5 from "../images/images/new_image.png";
+// import image5 from "../images/images/new_image.png";
+import image5 from "../images/images/new-image.png";
 
 
 
@@ -158,7 +161,7 @@ const Services = () => {
                             Choose your focus or come as you are — the energy knows where to go
                         </h3>
                         <div className="book-btn" style={{ marginTop: "3rem" }}>
-                            <a href="/" className="btn-default">Book a Session</a>
+                            <a href="/contact" className="btn-default">Book a Session</a>
                         </div>
                     </div>
                 </div>
@@ -211,7 +214,7 @@ const Services = () => {
 
                                 {/* What We Button Start */}
                                 <div className="what-we-btn wow fadeInUp" data-wow-delay="0.6s">
-                                    <a href="/" className="btn-default">
+                                    <a href="/contact" className="btn-default">
                                         Book a Session
                                     </a>
                                 </div>
@@ -336,7 +339,7 @@ const Services = () => {
                     {/* What We Benefits Box End */}
 
                     <div className="d-flex justify-content-center align-items-center my-5">
-                        <a href="/" className="btn-default">
+                        <a href="/services" className="btn-default">
                             Learn More About the Method
                         </a>
                     </div>
@@ -450,7 +453,7 @@ const Services = () => {
                         <h3>If you’re ready to feel the shift, it begins here.</h3>
 
                         <div className="book-btn" style={{ marginTop: "3rem" }}>
-                            <a href="/" className="btn-default">
+                            <a href="/contact" className="btn-default">
                                 Book a Session
                             </a>
                         </div>
