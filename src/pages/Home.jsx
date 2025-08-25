@@ -136,7 +136,7 @@ export const Home = () => {
 
                                 {/* Image Title */}
                                 <div className="new-about-image-title">
-                                    <h2>Meet Nithya</h2>
+                                    <h2>Meet  Nithya</h2>
                                 </div>
                             </div>
                         </div>
