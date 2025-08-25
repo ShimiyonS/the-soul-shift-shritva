@@ -360,7 +360,7 @@ export const Home = () => {
                         <div className="section-footer-text wow fadeInUp" data-wow-delay="0.2s">
                             <p>
                                 <span>Free</span> Let's make something great work together.{" "}
-                                <a href="/">Get Free Quote</a>
+                                <a href="/contact">Get Free Quote</a>
                             </p>
                         </div>
                         {/* Section Footer Text End */}

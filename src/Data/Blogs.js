@@ -60,7 +60,7 @@ export const blogs = [
         title: "An Open Note To Everyone In The Field Of Healing",
         category: "Wellness",
         content: [
-            { type: "image", src: blogDetailsImage2 },
+            { type: "image", src: blog1image2 },
             { type: "subheading", text: "Dear healers, mentors, gurus, doctors across all streams, physiotherapists, chiropractors, and all who are in the field of healing," },
             { type: "paragraph", text: "You all are in the field of healing because we have a deep compassion for humanity. But where does that disappear as soon as you start experiencing financial inflow or gain more practice or become popular or xyz reason? Why does the compassion get replaced with presumptions and assumptions? Why do you not let the clients/patients express themselves? Why do you feel that they are trying to overpower you?" },
             { type: "paragraph", text: "People come to you mostly because they want to be heard. Many a time, talking with a good listener itself relieves half the issue of the person who comes. Touch your heart and check with yourself. Are you a good listener? Are you listening or are you hearing?" },

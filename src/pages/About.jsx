@@ -274,14 +274,13 @@ const About = () => {
                         <div className='w-full images d-flex justify-content-between align-items-center my-5'>
                             {certifications.map((certification, index) => (
                                 <div key={index} className="flex-grow-1 mx-2 text-center">
-                                    <Link to="/services">
+                                    <a href="/services">
                                         <img
                                             src={certification.img}
                                             alt={`certification ${index + 1}`}
-
                                             style={{ width: "250px", objectFit: "contain", cursor: "pointer" }}
                                         />
-                                    </Link>
+                                    </a>
                                     <div className='certification-name' style={{ color: "#240752" }}>{certification.name}</div>
                                 </div>
                             ))}
