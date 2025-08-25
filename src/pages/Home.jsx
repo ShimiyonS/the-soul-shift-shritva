@@ -69,7 +69,7 @@ export const Home = () => {
         {
             icon: icon2,
             number: 100,
-            suffix: "K+",
+            suffix: "",
             text: "Lives Touched",
         },
         {
