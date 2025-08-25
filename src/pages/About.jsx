@@ -111,7 +111,7 @@ const About = () => {
             <div className="why-choose-us why-choose-us-container" style={{ padding: "0px" }}>
                 <div>
                     <div className="row section-row align-items-center overlay-image">
-                        <img src={bgimage1} alt="About Us" className=''/>
+                        <img src={bgimage1} alt="About Us" className='' />
                         <div className="col-lg-12 overlay-image-container">
                             <div className="col-lg-12 overlay-image-container px-8 overlay-image-text">
                                 <p>
@@ -271,15 +271,15 @@ const About = () => {
                 <div className='container'>
                     <div className='certification'>
                         <h3 className='text-start pt-5 col-12'>Certifications of Nithya</h3>
-                        <div className='w-full images d-flex justify-content-between align-items-center'>
+                        <div className='w-full images d-flex justify-content-between align-items-center my-5'>
                             {certifications.map((certification, index) => (
                                 <div key={index} className="flex-grow-1 mx-2 text-center">
                                     <Link to="/services">
                                         <img
                                             src={certification.img}
                                             alt={`certification ${index + 1}`}
-                                            className="w-100"
-                                            style={{ objectFit: "contain", cursor: "pointer" }}
+
+                                            style={{ width: "250px", objectFit: "contain", cursor: "pointer" }}
                                         />
                                     </Link>
                                     <div className='certification-name' style={{ color: "#240752" }}>{certification.name}</div>
