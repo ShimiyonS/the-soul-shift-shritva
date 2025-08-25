@@ -2,7 +2,8 @@
 import './App.css';
 import { Home } from './pages/Home';
 import "./css/all.min.css"
-import { Route,  Routes } from 'react-router-dom';
+import "./css/slicknav.min.css";
+import { Route, Routes } from 'react-router-dom';
 import Services from './pages/Services';
 import About from './pages/About';
 import Blogs from './pages/Blogs';

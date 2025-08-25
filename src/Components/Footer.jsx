@@ -1,6 +1,5 @@
 import React from 'react'
-import logo from "../images/icons/Soul_shift_final_logo1.png";
-
+import logo from "../images/icons/new_logo3.svg"
 const Footer = () => {
     return (
         <footer className="footer-main">
@@ -12,17 +11,11 @@ const Footer = () => {
                             {/* Footer About */}
                             <div className="footer-about d-flex align-items-center">
                                 {/* Logo */}
-                                <a className="navbar-brand col-lg-1" href="/">
+                                <div className="footer-about-text col-lg-6">
                                     <img src={logo} alt="Logo" />
-                                </a>
-                                <div className="footer-about-text ms-3 col-lg-6">
-                                    <h1 className="margin-bottom-0 text-white">The Soul Shift</h1>
-                                    <p className="margin-bottom-0 text-white">
-                                        The Transformation from the core
-                                    </p>
                                 </div>
                                 <div className="about-footer-content col-lg-4">
-                                    <p>Powered by Intent Shunyaivaham</p>
+                                    <p>Powered by Intent Shūnyaivāham</p>
                                 </div>
                             </div>
 

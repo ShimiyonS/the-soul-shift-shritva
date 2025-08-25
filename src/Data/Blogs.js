@@ -57,7 +57,7 @@ export const blogs = [
     {
         id: 2,
         blogpageimage: blog1image2,
-        title: "An Open Letter to Everyone Seeking Healing",
+        title: "An Open Note To Everyone In The Field Of Healing",
         category: "Wellness",
         content: [
             { type: "image", src: blogDetailsImage2 },
@@ -81,7 +81,7 @@ export const blogs = [
     },
     {
         id: 3,
-        title: "The Shift from i (Ego) to I: A Beginner’s Guide to Shunyaivaham",
+        title: "The Shift from i (Ego) to I: A Beginner’s Guide to Shūnyaivāham",
         blogpageimage: blog1image3,
         category: "Wellness",
         content: [
@@ -89,10 +89,10 @@ export const blogs = [
             { type: "paragraph", text: "Understanding the journey called Shūnyaivāham" },
             { type: "paragraph", text: "There comes a time in the life of every seeker where the old ways start to feel like clothes that are ill-fitting. The identities, beliefs, and thoughts we carry, the roles we play – everything starts feeling overwhelmed. And, slowly, they start cracking. Through these cracks, a voice starts whispering to us, pulling us into a space that we knew existed but never tapped into. That whisper is the soul awakening, and that space, (for lack of better words), the <b>Shūnyaivāham</b>" },
             { type: "paragraph", text: "What Is <b>Shūnyaivāham?</b>" },
-            { type: "paragraph", text: "Even when I refer to it as a space or a journey, Shunyaivaham is much beyond all these. A union of two Sanskrit words - Shūnya (Void) and Aham (I) - it reveals a profound truth: “The Void is I” or I am the Void. " },
+            { type: "paragraph", text: "Even when I refer to it as a space or a journey, Shūnyaivāham is much beyond all these. A union of two Sanskrit words - Shūnya (Void) and Aham (I) - it reveals a profound truth: “The Void is I” or I am the Void. " },
             { type: "paragraph", text: "It is not a phrase, not a concept – but the absolute truth, a state of being that is beyond all names, identities, forms, labels, and perceptions that we carry." },
             { type: "paragraph", text: "Shunya is the Void – emptiness, where nothing exists, yet everything exists. " },
-            { type: "paragraph", text: "To embody Shunyaivaham is to no longer seek identity in what we do, how we are seen, or what you have been through. It is to allow the complete dissolution of  the weight of labels, achievements, pain stories, even spiritual striving, and rest in the simplicity of being." },
+            { type: "paragraph", text: "To embody Shūnyaivāham is to no longer seek identity in what we do, how we are seen, or what you have been through. It is to allow the complete dissolution of  the weight of labels, achievements, pain stories, even spiritual striving, and rest in the simplicity of being." },
             { type: "paragraph", text: "It is the intuitive guidance that says: " },
             { type: "paragraph", text: "I am not this name, this pain, this past." },
             { type: "paragraph", text: "I am the field beyond form." },
@@ -102,7 +102,7 @@ export const blogs = [
             { type: "paragraph", text: "The ego or the “i” is something that we all are aware of. It lies deeply rooted in the identities and labels we carry – the body, roles we play, career, story, pain, and even the spiritual journey we are in. It attaches itself through comparisons – competes and seeks validation – all out of the need to feel safe. A need to be visible. It is afraid of nothing, because that is how it grows up. " },
             { type: "paragraph", text: "We all go through this, defending the “i,” without realizing that we are, unintentionally, trying to control every aspect of our life to feel that security and certainty we are seeking.  And, in turn, this little “i” makes trust and surrender feel unsafe as both rests in uncertainty and unknown." },
             { type: "subheading", text: 'The Big "I": The Soul Awakening' },
-            { type: "paragraph", text: "When we start “waking up” from this deep sleep, we expect the life to get easier, don’t we? But that even when we face and traverse the path of uncertainty from that moment, we feel the intuitive guidance of our soul. This is when Shunyaivaham begins." },
+            { type: "paragraph", text: "When we start “waking up” from this deep sleep, we expect the life to get easier, don’t we? But that even when we face and traverse the path of uncertainty from that moment, we feel the intuitive guidance of our soul. This is when Shūnyaivāham begins." },
             { type: "subheading", text: "What Changes When You Shift from i to I?" },
             { type: "paragraph", text: "Initially, we start questioning everything – the beliefs, the ideas, the thoughts – every single aspect we have lived until now. We feel as if we were wronged. We will start blaming and holding others responsible for the “aches and pains and troubles” we went through, or perhaps, we are experiencing even now. " },
             { type: "paragraph", text: "It goes on for a whole, and then, we stop chasing. We realize, slowly, over time, that everything we see and experience is somewhere deep within us." },
@@ -111,7 +111,7 @@ export const blogs = [
             { type: "paragraph", text: "We slowly let go of the masks, roles, and identities." },
             { type: "paragraph", text: "We become okay with how we are." },
             { type: "paragraph", text: "We stop trying to fix ourselves because we know there is nothing wrong." },
-            { type: "paragraph", text: "This is the soul awakening. This is Shunyaivaham." },
+            { type: "paragraph", text: "This is the soul awakening. This is Shūnyaivāham." },
             { type: "subheading", text: "A Gentle Beginning: How to Walk the Path" },
             { type: "paragraph", text: "There are no hard and fast rules. This is not a methodology. This is not yet another modality. It is the absolute truth.  So, begin where you are:" },
             { type: "paragraph", text: "We know the way; our souls remember the path and the truth. All we need to do is to allow ourselves listen. " },
@@ -123,7 +123,7 @@ export const blogs = [
             { type: "paragraph", text: "Listen to your body. Let the intuitive guidance from the body lead you." },
             { type: "paragraph", text: "And if you forget, which is quite natural, simply return. Again and again and again. " },
             { type: "paragraph", text: "This is not about becoming someone new. It is about becoming who you truly are, without the noise of the world or the weight of the past." },
-            { type: 'paragraph', text: 'This does sound enticing, isn’t it?  It is not a linear journey, or a path. We will be able to see the glimpses of Shunyaivaham every now and then. There will be ups and downs. The pendulum will keep swinging, but embracing that paradox and duality will become curious and easier for us. And, eventually, we will completely embody Shunyaivaham – where we will just BE – nothing, yet everything. Nobody, yet everybody. ' }
+            { type: 'paragraph', text: 'This does sound enticing, isn’t it?  It is not a linear journey, or a path. We will be able to see the glimpses of Shūnyaivāham every now and then. There will be ups and downs. The pendulum will keep swinging, but embracing that paradox and duality will become curious and easier for us. And, eventually, we will completely embody Shūnyaivāham – where we will just BE – nothing, yet everything. Nobody, yet everybody. ' }
         ]
     }
 ]
