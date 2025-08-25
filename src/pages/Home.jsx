@@ -171,8 +171,7 @@ export const Home = () => {
 
                                 {/* Button */}
                                 <div
-                                    className="new-about-content-btn wow fadeInUp"
-                                    data-wow-delay="0.8s"
+                                    className="new-about-content-btn"
                                 >
                                     <Link to="/contact" className="btn-default">
                                         Are you ready to return to your essence?
