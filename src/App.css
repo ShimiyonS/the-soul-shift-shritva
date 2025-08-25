@@ -793,7 +793,7 @@ header.main-header .header-sticky.active {
 
 .hero {
 	position: relative;
-	padding: 240px 0 140px;
+	padding: 220px 0 140px;
 	min-height: 100vh;
 	align-content: center;
 	z-index: 1;
