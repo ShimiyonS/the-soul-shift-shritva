@@ -15,23 +15,61 @@ const Contact = () => {
         message: ""
     });
 
+    const [errors, setErrors] = useState({});
+
     const handleChange = (e) => {
-        console.log(e.target.name, e.target.value);
         setFormData({ ...formData, [e.target.name]: e.target.value });
+
+        // Clear error for the field when user starts typing
+        setErrors({ ...errors, [e.target.name]: "" });
     };
 
+    const validate = () => {
+        let newErrors = {};
 
+        if (!formData.fullName.trim()) {
+            newErrors.fullName = "Full name is required";
+        }
+
+        if (!formData.email.trim()) {
+            newErrors.email = "Email is required";
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+            newErrors.email = "Enter a valid email address";
+        }
+
+        if (!formData.service.trim()) {
+            newErrors.service = "Please select a service";
+        }
+
+        return newErrors;
+    };
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log(formData);
+        const validationErrors = validate();
+        if (Object.keys(validationErrors).length > 0) {
+            setErrors(validationErrors);
+            return; // stop submit
+        }
 
+        const apiUrl = process.env.REACT_APP_API_URL;
+        console.log("🌐 API URL:", apiUrl);
         try {
-            const res = await axios.post("http://localhost:8000/api/contact", formData, {
+            const res = await axios.post(`${apiUrl}/api/contact`, formData, {
                 headers: { "Content-Type": "application/json" },
             });
 
             console.log(res.data);
             alert(res.data.message);
+            // Reset form
+            setFormData({
+                fullName: "",
+                email: "",
+                service: "",
+                message: ""
+            });
+            setErrors({});
+            document.getElementById("contactForm").reset();
         } catch (error) {
             console.error("❌ Error submitting form:", error);
             alert("Something went wrong. Please try again.");
@@ -154,32 +192,33 @@ const Contact = () => {
                                                     type="text"
                                                     name="fullName"
                                                     className="form-control"
-                                                    id="fullname"
                                                     placeholder="Full name"
-                                                    required
+                                                    value={formData.fullName}
                                                     onChange={handleChange}
                                                 />
+                                                {errors.fullName && <small className="text-danger">{errors.fullName}</small>}
                                             </div>
+
                                             <div className="form-group col-md-6 mb-4">
                                                 <input
                                                     type="email"
                                                     name="email"
                                                     className="form-control"
-                                                    id="email"
                                                     placeholder="E-mail"
-                                                    required
+                                                    value={formData.email}
                                                     onChange={handleChange}
                                                 />
+                                                {errors.email && <small className="text-danger">{errors.email}</small>}
                                             </div>
 
                                             <div className="form-group col-md-12 mb-4">
                                                 <select
                                                     name="service"
                                                     className="form-control"
-                                                    id="service"
-                                                    required
+                                                    value={formData.service}
                                                     onChange={handleChange}
                                                 >
+                                                    <option value="">-- Select Service --</option>
                                                     <option value="Money & Soul Flow">Money & Soul Flow</option>
                                                     <option value="Sacred Union & Relationship Healing">Sacred Union & Relationship Healing</option>
                                                     <option value="Wisdom & Energy Realignment">Wisdom & Energy Realignment</option>
@@ -189,24 +228,24 @@ const Contact = () => {
                                                     <option value="Heart Clearing & Emotional Integration">Heart Clearing & Emotional Integration</option>
                                                     <option value="Boundaries, Visibility & Voice">Boundaries, Visibility & Voice</option>
                                                 </select>
+                                                {errors.service && <small className="text-danger">{errors.service}</small>}
                                             </div>
 
                                             <div className="form-group col-md-12 mb-5">
                                                 <textarea
                                                     name="message"
                                                     className="form-control"
-                                                    id="message"
                                                     rows="3"
                                                     placeholder="Write Message..."
+                                                    value={formData.message}
                                                     onChange={handleChange}
                                                 ></textarea>
                                             </div>
 
                                             <div className="col-md-12">
                                                 <button type="submit" className="btn-default">
-                                                    book An appointment
+                                                    Book An Appointment
                                                 </button>
-                                                <div id="msgSubmit" className="h3 hidden"></div>
                                             </div>
                                         </div>
                                     </form>

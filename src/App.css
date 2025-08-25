@@ -7788,3 +7788,40 @@ h2 {
 		display: block;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .icon-box.blog-counter-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .why-choose-counter-item {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .why-choose-counter-box {
+    justify-content: center;
+  }
+  .why-choose-counter-item {
+    flex: 1 1 45%;
+    justify-content: center;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .why-choose-counter-item {
+    flex: 1 1 100%;
+    justify-content: flex-start;
+  }
+} */
