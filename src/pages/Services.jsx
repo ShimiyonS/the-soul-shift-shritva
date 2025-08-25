@@ -134,16 +134,6 @@ const Services = () => {
                             />
                         ))}
 
-                        {/* Footer Text */}
-                        <div className="col-lg-12 pb-4">
-                            <div className="section-footer-text wow" data-wow-delay="1.6s">
-                                <p>
-                                    <span>Free</span> Let's make something great work together.{" "}
-                                    <a href="/">Get Free Quote</a>
-                                </p>
-                            </div>
-                        </div>
-
                         {/* Closing Hero Text */}
                         <div className="col-lg-12 py-4">
                             <p className="service-hero-text">
@@ -192,7 +182,7 @@ const Services = () => {
                             <div className="what-we-content">
                                 {/* Section Title Start */}
                                 <div className="section-title">
-                                    <h3 className="wow fadeInUp">The ARE Life Method</h3>
+                                    <h3 className="wow fadeInUp">The A.R.E. Life Method</h3>
                                     <h2 className="text-anime-style-2" data-cursor="-opaque">
                                         Allow – Respond – Embody
                                     </h2>
@@ -201,7 +191,7 @@ const Services = () => {
                                         data-wow-delay="0.2s"
                                         style={{ color: "black" }}
                                     >
-                                        Every session is rooted in The Soul Root Codex, guided by the ARE
+                                        Every session is rooted in The Soul Root Codex, guided by the A.R.E.
                                         Life Method (Allow – Respond – Embody), and illuminated by the
                                         7-step Purpose Pathway.
                                     </p>
@@ -238,7 +228,7 @@ const Services = () => {
                     <div className="col-lg-7 order-lg-1 order-2">
                         <h3 className="wow fadeInUp">Sacred Tools & Teachings</h3>
                         <h2 className="text-anime-style-2" data-cursor="-opaque">
-                            To seed The ARE Life or other wisdom streams
+                            To seed The A.R.E. Life or other wisdom streams
                         </h2>
                     </div>
 
@@ -302,7 +292,7 @@ const Services = () => {
                                     <img src={thearerhythm} alt="" />
                                 </div>
                                 <div className="what-we-item-content">
-                                    <h3>The ARE Life –</h3>
+                                    <h3>The A.R.E. Life –</h3>
                                     <h3>Allow. Respond. Embody</h3>
                                     <p>
                                         A transformational rhythm that dissolves resistance,
