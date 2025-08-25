@@ -9,7 +9,19 @@ import bgImage4 from "../images/images/about-us-img-4.jpg"
 import bgImage5 from "../images/images/new-image.png";
 
 
+import certificationImg1 from "../images/images/certification1.png"
+import certificationImg2 from "../images/images/certification2.png"
+import certificationImg3 from "../images/images/certification3.png"
+
+
 const About = () => {
+    const certifications = [
+        { img: certificationImg1 },
+        { img: certificationImg2 },
+        { img: certificationImg3 }
+    ]
+
+
     return (
         <>
             <Header
@@ -181,7 +193,7 @@ const About = () => {
                         <p className="pt-4">
                             A comprehensive 7-step healing system, rooted in the principles of
                             The Purpose Pathway and structured within the 3-phase rhythm of The
-                            A.R.E. Method. It maps 108 energetic and emotional patterns, helping
+                            A.R.E. Life Method. It maps 108 energetic and emotional patterns, helping
                             you recognize how you have adapted and protected yourself through
                             life, and guiding you to release those imprints so you can return to
                             wholeness with clarity, compassion, and conscious choice.
@@ -255,7 +267,23 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <Footer />
+            <section>
+                <div className='container'>
+                    <div className='certification'>
+                        <h3 className='text-start pt-5 col-12'>Certifications of Nithya</h3>
+                        <div className='w-full images d-flex justify-content-between align-items-center'>
+                            {certifications.map((certification, index) => (
+                                <div key={index} className='m-3'>
+                                    <img src={certification.img} alt={`certification ${index + 1}`} />
+                                </div>
+                            ))}
+                            {/* <img src={certificationImg1} alt='certificationImg1' />
+                            <img src={certificationImg2} alt='certificationImg2' />
+                            <img src={certificationImg3} alt='certificationImg3' /> */}
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
