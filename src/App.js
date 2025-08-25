@@ -10,9 +10,11 @@ import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
 import Footer from './Components/Footer';
 import BlogDetails from './pages/BlogDetails';
+import ScrollToTop from './Components/ScrollToTop';
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />

@@ -5,7 +5,9 @@ import aboutImage from "../images/images/about-us-img-1.jpg";
 import bgimage1 from "../images/images/about-us-img-2.jpg"
 import bgimage2 from "../images/images/about-us-img-3.jpg"
 import bgImage4 from "../images/images/about-us-img-4.jpg"
-import bgImage5 from "../images/images/about-us-img-5.jpg";
+// import bgImage5 from "../images/images/about-us-img-5.jpg";
+import bgImage5 from "../images/images/new-image.png";
+
 
 const About = () => {
     return (
@@ -246,7 +248,7 @@ const About = () => {
                         <h3 className="section-text work-with-me mt-3">Work With Me</h3>
 
                         <div className="book-btn mt-4">
-                            <a href="/" className="btn-default">
+                            <a href="/contact" className="btn-default">
                                 Book a Session
                             </a>
                         </div>

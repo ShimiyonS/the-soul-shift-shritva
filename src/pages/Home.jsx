@@ -94,7 +94,7 @@ export const Home = () => {
                 title="Transformation From The Core"
                 description="Where healing is not becoming more, but remembering who you truly are. Step into a sacred space of stillness, soul remembrance, and deep energetic transformation."
                 buttons={[
-                    { label: "Begin Your Journey", link: "/journey" },
+                    { label: "Begin Your Journey", link: "/services" },
                     { label: "Meet Nithya", link: "/about" },
                 ]}
                 isHome={true}
@@ -174,7 +174,7 @@ export const Home = () => {
                                     className="new-about-content-btn wow fadeInUp"
                                     data-wow-delay="0.8s"
                                 >
-                                    <Link to="/" className="btn-default">
+                                    <Link to="/contact" className="btn-default">
                                         Are you ready to return to your essence?
                                     </Link>
                                 </div>
@@ -214,7 +214,7 @@ export const Home = () => {
                                 className="about-content-btn wow fadeInUp"
                                 data-wow-delay="0.8s"
                             >
-                                <Link to="/" className="btn-default">
+                                <Link to="/services" className="btn-default">
                                     Explore the core themes below
                                 </Link>
                             </div>
@@ -282,7 +282,7 @@ export const Home = () => {
 
                         <div className="col-lg-4">
                             <div className="section-btn wow fadeInUp" data-wow-delay="0.2s">
-                                <Link to="/blogs" className="btn-default">
+                                <Link to="/services" className="btn-default">
                                     Explore All Services
                                 </Link>
                             </div>
@@ -349,7 +349,7 @@ export const Home = () => {
                                 Choose your focus or come as you are — the energy knows where to go
                             </h3>
                             <div className="book-btn" style={{ marginTop: "3rem" }}>
-                                <a href="/" className="btn-default">
+                                <a href="/contact" className="btn-default">
                                     Book a Session
                                 </a>
                             </div>
@@ -416,7 +416,7 @@ export const Home = () => {
 
                                 {/* What We Button Start */}
                                 <div className="what-we-btn wow fadeInUp" data-wow-delay="0.6s">
-                                    <a href="/" className="btn-default">
+                                    <a href="/contact" className="btn-default">
                                         Book a Session
                                     </a>
                                 </div>
@@ -541,7 +541,7 @@ export const Home = () => {
                     {/* What We Benefits Box End */}
 
                     <div className="d-flex justify-content-center align-items-center my-5">
-                        <a href="/" className="btn-default">
+                        <a href="/services" className="btn-default">
                             Learn More About the Method
                         </a>
                     </div>
@@ -654,7 +654,7 @@ export const Home = () => {
                         <h3 className='fs-6  fs-lg-1 fs-sm-6 '>If you’re ready to feel the shift, it begins here.</h3>
 
                         <div className="book-btn" style={{ marginTop: "3rem" }}>
-                            <a href="/" className="btn-default">
+                            <a href="/contact" className="btn-default">
                                 Book a Session
                             </a>
                         </div>
