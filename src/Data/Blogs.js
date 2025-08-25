@@ -1,4 +1,3 @@
-import blogDetailsImage2 from "../images/images/blog_2_detail_image"
 import blog1image2 from "../images/images/blog-2.png"
 import blog1image1 from "../images/images/blog-1.png"
 import blog1image3 from "../images/images/blog-3.png"
