@@ -81,7 +81,6 @@ const Footer = () => {
                             <div className="footer-links">
                                 <h3 className="contactus-h3">Contact Us</h3>
                                 <ul>
-                                    <li><a href="/">Our Address:</a></li>
                                     <li>
                                         <a href="/">
                                             Reach me <span style={{ fontStyle: "italic" }}>@</span> The Soul Shift

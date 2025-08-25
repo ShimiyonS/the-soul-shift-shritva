@@ -46,7 +46,7 @@ const Header = ({ title, subtitle, description, buttons = [], isHome = false }) 
                                     </ul>
                                 </div>
                                 <div className="header-contact-btn">
-                                    <a href="/" className="btn-default">Get Started</a>
+                                    <a href="/contact" className="btn-default">Get Started</a>
                                 </div>
                             </div>
                             {/* Hamburger */}
@@ -93,7 +93,7 @@ const Header = ({ title, subtitle, description, buttons = [], isHome = false }) 
                         </ul>
 
                         <div className="header-contact-btn">
-                            <a href="/" className="btn-default">Get Started</a>
+                            <a href="/contact" className="btn-default">Get Started</a>
                         </div>
                     </div>
                 </div>
