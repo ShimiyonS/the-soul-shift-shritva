@@ -108,11 +108,9 @@ const Services = () => {
     return (
         <>
             <Header title="Services" />
-
             <div className="page-services">
                 <div className="container">
                     <div className="row">
-                        {/* Hero Text */}
                         <div className="col-lg-12 py-4">
                             <p className="service-hero-text">
                                 Every session you experience with Nithya is grounded in The Soul Root
@@ -127,7 +125,6 @@ const Services = () => {
                             </h2>
                         </div>
 
-                        {/* Map through services */}
                         {services?.map((service, index) => (
                             <ServiceCard
                                 key={index}
@@ -137,10 +134,9 @@ const Services = () => {
                             />
                         ))}
 
-                        {/* Closing Hero Text */}
                         <div className="col-lg-12 py-4">
                             <p className="service-hero-text">
-                                Every session is rooted in The Soul Root Codex, guided by the A.R.E. Method
+                                Every session is rooted in The Soul Root Codex, guided by the A.R.E. Life Method
                                 (Allow – Respond – Embody), and illuminated by the 7-step Purpose Pathway.
                                 This is not surface-level clearing - it is a deep, multidimensional reweaving
                                 grounded in the remembrance of who you truly are. Don’t worry about choosing
@@ -171,19 +167,15 @@ const Services = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 order-lg-1 order-2 pe-lg-5">
-                            {/* What We Image Start */}
                             <div className="what-we-image" style={{ backgroundColor: "blue" }}>
                                 <figure>
                                     <img src={bgImage3} alt="" />
                                 </figure>
                             </div>
-                            {/* What We Image End */}
                         </div>
 
                         <div className="col-lg-6 order-lg-2 order-1">
-                            {/* What We Content Start */}
                             <div className="what-we-content">
-                                {/* Section Title Start */}
                                 <div className="section-title">
                                     <h3 className="wow fadeInUp">The A.R.E. Life Method</h3>
                                     <h2 className="text-anime-style-2" data-cursor="-opaque">
