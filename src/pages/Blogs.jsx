@@ -19,7 +19,7 @@ const Blogs = () => {
                                         <div className="post-item">
                                             {/* Post Featured Image */}
                                             <div className="post-featured-image">
-                                                <a href="/" >
+                                                <a href={`/blog/${blog.id}`} >
                                                     <figure className="image-anime">
                                                         <img src={blog?.blogpageimage} alt="Chakra Balancing" />
                                                     </figure>
@@ -29,7 +29,7 @@ const Blogs = () => {
                                             {/* Post Item Content */}
                                             <div className="post-item-content">
                                                 <h2>
-                                                    <a href="/">
+                                                    <a href={`/blog/${blog.id}`}>
                                                         {blog.title}
                                                     </a>
                                                 </h2>
