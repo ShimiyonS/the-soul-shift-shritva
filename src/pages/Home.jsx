@@ -215,7 +215,7 @@ export const Home = () => {
                                 data-wow-delay="0.8s"
                             >
                                 <Link to="/services" className="btn-default">
-                                    Explore the core themes below
+                                    Explore the core themes
                                 </Link>
                             </div>
                         </div>
@@ -695,7 +695,7 @@ export const Home = () => {
                                 <div className="post-item">
                                     {/* Post Featured Image */}
                                     <div className="post-featured-image">
-                                        <a href="/" >
+                                        <a href={`/blog/${blog.id}`}>
                                             <figure className="image-anime">
                                                 <img src={blog?.blogpageimage} alt="Chakra Balancing" />
                                             </figure>
@@ -705,7 +705,7 @@ export const Home = () => {
                                     {/* Post Item Content */}
                                     <div className="post-item-content">
                                         <h2>
-                                            <a href="/">
+                                            <a href={`/blog/${blog.id}`}>
                                                 {blog.title}
                                             </a>
                                         </h2>
