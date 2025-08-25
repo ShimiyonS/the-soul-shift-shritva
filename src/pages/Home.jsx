@@ -641,7 +641,7 @@ export const Home = () => {
                     {/* Overlay Content */}
                     <div className="col-lg-12 overlay-image-container-2">
                         <h2
-                            className=" section-text fs-6    fs-lg-1 fs-sm-6"
+                            className=" section-text fs-lg-1 fs-sm-4"
                         >
                             You are not broken. You are becoming.
                         </h2>
