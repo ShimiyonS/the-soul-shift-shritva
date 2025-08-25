@@ -192,7 +192,7 @@ const About = () => {
                 <div className="row align-items-center">
                     {/* Text Section */}
                     <div className="col-lg-8 arelif-container">
-                        <h1 className="fw-bold">The ARE Life</h1>
+                        <h1 className="fw-bold">The A.R.E. Life</h1>
                         <h2 className="text-primary fw-semibold pt-4">Allow. Respond. Embody</h2>
                         <p className="pt-4">
                             It's a way of living — a rhythm — rooted in presence, response, and

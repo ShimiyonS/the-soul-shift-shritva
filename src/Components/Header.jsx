@@ -1,7 +1,16 @@
-import React from "react";
-import logo from "../images/icons/Soul_shift_final_logo1.png"
+import React, { useState } from "react";
+import logo from "../images/icons/new_logo3.svg";
+
 
 const Header = ({ title, subtitle, description, buttons = [], isHome = false }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [openSubmenu, setOpenSubmenu] = useState(null);
+
+    const toggleMenu = () => setIsOpen(!isOpen);
+
+    const toggleSubmenu = (index) => {
+        setOpenSubmenu(openSubmenu === index ? null : index);
+    };
     return (
         <>
             {/* Header Start */}
@@ -9,14 +18,10 @@ const Header = ({ title, subtitle, description, buttons = [], isHome = false }) 
                 <div className="header-sticky">
                     <nav className="navbar navbar-expand-lg">
                         <div className="container">
-                            {/* Logo Start */}
                             <a className="navbar-brand" href="/">
-                                <img src={logo} alt="Logo" width="30%" />
-                                <h1>The Soul Shift</h1>
+                                <img src={logo} alt="Logo" width="100%" />
                             </a>
-                            {/* Logo End */}
 
-                            {/* Main Menu Start */}
                             <div className="collapse navbar-collapse main-menu">
                                 <div className="nav-menu-wrapper">
                                     <ul className="navbar-nav mr-auto" id="menu">
@@ -40,23 +45,59 @@ const Header = ({ title, subtitle, description, buttons = [], isHome = false }) 
                                         </li>
                                     </ul>
                                 </div>
-
-                                {/* Header Contact Btn Start */}
                                 <div className="header-contact-btn">
                                     <a href="/" className="btn-default">Get Started</a>
                                 </div>
-                                {/* Header Contact Btn End */}
                             </div>
-                            {/* Main Menu End */}
-                            <div className="navbar-toggle"></div>
+                            {/* Hamburger */}
+                            <button
+                                className={`navbar-toggle ${isOpen ? "open" : ""}`}
+                                onClick={toggleMenu}
+                                aria-expanded={isOpen}
+                            >
+                                <span className="icon-bar"></span>
+                                <span className="icon-bar"></span>
+                                <span className="icon-bar"></span>
+                            </button>
                         </div>
                     </nav>
-                    <div className="responsive-menu"></div>
+                    <div className={`responsive-menu ${isOpen ? "show" : ""}`}>
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <a className="nav-link" href="/">Home</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/about">About</a>
+                            </li>
+                            {/* Example Submenu */}
+                            <li className={`nav-item has-submenu ${openSubmenu === 1 ? "open" : ""}`}>
+                                <button
+                                    className="nav-link submenu-toggle"
+                                    onClick={() => toggleSubmenu(1)}
+                                >
+                                    Services <span className="submenu-arrow">{openSubmenu === 1 ? "▲" : "▼"}</span>
+                                </button>
+                                <ul className="submenu">
+                                    <li><a href="/services/yoga">Yoga</a></li>
+                                    <li><a href="/services/meditation">Meditation</a></li>
+                                    <li><a href="/services/healing">Healing</a></li>
+                                </ul>
+                            </li>
+
+                            <li className="nav-item">
+                                <a className="nav-link" href="/blogs">Blog</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/contact">Contact</a>
+                            </li>
+                        </ul>
+
+                        <div className="header-contact-btn">
+                            <a href="/" className="btn-default">Get Started</a>
+                        </div>
+                    </div>
                 </div>
             </header>
-            {/* Header End */}
-
-            {/* Hero Section Start */}
             <div className="bg-image-div">
                 <div className={` parallaxie ${isHome ? "hero" : "inner-hero"}`}>
                     <div className="container">
@@ -76,22 +117,6 @@ const Header = ({ title, subtitle, description, buttons = [], isHome = false }) 
                                             {description}
                                         </p>
                                     </div>
-                                    {/* Section Title End */}
-
-                                    {/* Hero Content Body Start */}
-                                    {/* <div className="hero-body wow fadeInUp" data-wow-delay="0.4s">
-                                        <div className="hero-btn">
-                                            {console.log(buttons)}
-                                            <Link to={buttons[0]?.link} className="btn-default">
-                                                {buttons[0]?.label}
-                                            </Link>
-                                        </div>
-                                        <div className="hero-btn">
-                                            <Link to={buttons[1]?.link} className="btn-default">
-                                                {buttons[1]?.label}
-                                            </Link>
-                                        </div>
-                                    </div> */}
                                     {buttons.length > 0 && (
                                         <div className="hero-body wow fadeInUp" data-wow-delay="0.4s">
                                             {buttons.map((btn, i) => (
@@ -103,9 +128,7 @@ const Header = ({ title, subtitle, description, buttons = [], isHome = false }) 
                                             ))}
                                         </div>
                                     )}
-                                    {/* Hero Content Body End */}
                                 </div>
-                                {/* Hero Content End */}
                             </div>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ import sacredUnion from "../images/icons/Sacred-Union-Relationship-Healing.svg";
 import wisdomEnergy from "../images/icons/Wisdom-Energy-Realignment.svg";
 import purposePathway from "../images/images/serviceicon4.png";
 import bgImage from "../images/images/images1.png"
-import bgImage2 from "../images/images/images2.png"
+import bgImage2 from "../images/images/bg-image.png"
 import bgImage3 from "../images/images/image3.jpg"
 import Shūnyaivāham from "../images/icons/Shūnyaivāham.svg"
 import thepurposepathway from "../images/icons/The-Purpose-Pathway.svg"
@@ -68,13 +68,13 @@ export const Home = () => {
         },
         {
             icon: icon2,
-            number: 30,
+            number: 100,
             suffix: "K+",
             text: "Lives Touched",
         },
         {
             icon: icon3,
-            number: 7,
+            number: 6,
             suffix: "",
             text: "Continents Reached",
         },
@@ -88,7 +88,9 @@ export const Home = () => {
     return (
         <>
             <Header
-                subtitle="Powered by Intent Shunyaivaham"
+
+                subtitle="Powered by Intent Shūnyaivāham"
+
                 title="Transformation From The Core"
                 description="Where healing is not becoming more, but remembering who you truly are. Step into a sacred space of stillness, soul remembrance, and deep energetic transformation."
                 buttons={[
@@ -134,7 +136,7 @@ export const Home = () => {
 
                                 {/* Image Title */}
                                 <div className="new-about-image-title">
-                                    <h2>MEET Nithya</h2>
+                                    <h2>Meet Nithya</h2>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +145,7 @@ export const Home = () => {
                         <div className="col-lg-6">
                             <div className="new-about-us-content">
                                 <div className="section-title">
-                                    <h3 className="wow fadeInUp">About us</h3>
+                                    <h3 className="wow fadeInUp">About</h3>
                                     <h2
                                         className="text-anime-style-2"
                                         data-cursor="-opaque"
@@ -385,7 +387,7 @@ export const Home = () => {
                             <div className="what-we-content">
                                 {/* Section Title Start */}
                                 <div className="section-title">
-                                    <h3 className="wow fadeInUp">The ARE Life Method</h3>
+                                    <h3 className="wow fadeInUp">The A.R.E. Life Method</h3>
                                     <h2 className="text-anime-style-2" data-cursor="-opaque">
                                         Allow – Respond – Embody
                                     </h2>
@@ -394,7 +396,7 @@ export const Home = () => {
                                         data-wow-delay="0.2s"
                                         style={{ color: "black" }}
                                     >
-                                        Every session is rooted in The Soul Root Codex, guided by the ARE
+                                        Every session is rooted in The Soul Root Codex, guided by the A.R.E.
                                         Life Method (Allow – Respond – Embody), and illuminated by the
                                         7-step Purpose Pathway.
                                     </p>
@@ -431,7 +433,7 @@ export const Home = () => {
                     <div className="col-lg-7 order-lg-1 order-2">
                         <h3 className="wow fadeInUp">Sacred Tools & Teachings</h3>
                         <h2 className="text-anime-style-2" data-cursor="-opaque">
-                            To seed The ARE Life or other wisdom streams
+                            To seed The A.R.E. Life or other wisdom streams
                         </h2>
                     </div>
 
@@ -495,7 +497,7 @@ export const Home = () => {
                                     <img src={thearerhythm} alt="" />
                                 </div>
                                 <div className="what-we-item-content">
-                                    <h3>The ARE Life –</h3>
+                                    <h3>The A.R.E. Life –</h3>
                                     <h3>Allow. Respond. Embody</h3>
                                     <p>
                                         A transformational rhythm that dissolves resistance,
@@ -641,16 +643,15 @@ export const Home = () => {
                     {/* Overlay Content */}
                     <div className="col-lg-12 overlay-image-container-2">
                         <h2
-                            className="text-anime-style-2 section-text"
-                            data-cursor="-opaque"
+                            className=" section-text fs-6    fs-lg-1 fs-sm-6"
                         >
                             You are not broken. You are becoming.
                         </h2>
-                        <h3 className='pt-3'>
+                        <h3 className='pt-3 fs-6 fs-lg-1 fs-sm-6'>
                             The Soul Shift is not about fixing you — it is about remembering what
                             never left.
                         </h3>
-                        <h3>If you’re ready to feel the shift, it begins here.</h3>
+                        <h3 className='fs-6  fs-lg-1 fs-sm-6 '>If you’re ready to feel the shift, it begins here.</h3>
 
                         <div className="book-btn" style={{ marginTop: "3rem" }}>
                             <a href="/" className="btn-default">
@@ -669,7 +670,7 @@ export const Home = () => {
                             <div className="section-title">
                                 <h3 className="wow fadeInUp">Latest blog</h3>
                                 <h2 className="" data-cursor="">
-                                    Explore our latest 
+                                    Explore our latest
                                 </h2>
                             </div>
                             {/* Section Title End */}
