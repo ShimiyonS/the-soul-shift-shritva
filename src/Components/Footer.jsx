@@ -118,7 +118,7 @@ const Footer = () => {
                     <div className="col-lg-12">
                         <div className="footer-copyright">
                             <div className="footer-copyright-text">
-                                <p>Copyright © 2025 The Soul Shift - All rights reserved.</p>
+                                <p>Copyright © 2025 Shritva - All rights reserved.</p>
                             </div>
                             <div className="footer-privacy-policy">
                                 <ul>

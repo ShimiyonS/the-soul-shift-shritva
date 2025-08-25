@@ -86,7 +86,7 @@ const Contact = () => {
                             <div className="contact-us-content">
                                 {/* Section Title */}
                                 <div className="section-title">
-                                    <h3>contact us</h3>
+                                    <h3>Contact us</h3>
                                     <h2 className="text-anime-style-2" data-cursor="-opaque">
                                         Get in touch <span>with us</span>
                                     </h2>
