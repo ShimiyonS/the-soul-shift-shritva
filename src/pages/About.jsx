@@ -16,9 +16,9 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
     const certifications = [
-        { img: certificationImg1 },
-        { img: certificationImg2 },
-        { img: certificationImg3 }
+        { img: certificationImg1, name: "Emotional Wellbeing" },
+        { img: certificationImg2, name: "Body Code Healing" },
+        { img: certificationImg3, name: "Beliefs Code Healing" }
     ]
 
 
@@ -111,7 +111,7 @@ const About = () => {
             <div className="why-choose-us why-choose-us-container" style={{ padding: "0px" }}>
                 <div>
                     <div className="row section-row align-items-center overlay-image">
-                        <img src={bgimage1} alt="About Us" />
+                        <img src={bgimage1} alt="About Us" className=''/>
                         <div className="col-lg-12 overlay-image-container">
                             <div className="col-lg-12 overlay-image-container px-8 overlay-image-text">
                                 <p>
@@ -143,7 +143,7 @@ const About = () => {
                     <div className="row">
                         {/* Left Column - Image */}
                         <div className="col-lg-6">
-                            <div className="who-we-are" style={{ padding: "0px" }}>
+                            <div className="who-we-are who-we-are-img" style={{ padding: "0px" }}>
                                 <figure>
                                     <img src={bgimage2} alt="Who We Are" />
                                 </figure>
@@ -205,7 +205,7 @@ const About = () => {
             <div className="container py-5">
                 <div className="row align-items-center">
                     {/* Text Section */}
-                    <div className="col-lg-8 arelif-container">
+                    <div className="col-lg-8 col-md-8 arelif-container">
                         <h1 className="fw-bold">The A.R.E. Life</h1>
                         <h2 className="text-primary fw-semibold pt-4">Allow. Respond. Embody</h2>
                         <p className="pt-4">
@@ -231,7 +231,7 @@ const About = () => {
                     </div>
 
                     {/* Image Section */}
-                    <div className="col-lg-4 mt-lg-0">
+                    <div className="col-lg-4 col-md-4 mt-lg-0">
                         <img
                             src={bgImage4}
                             alt="Chakra Body"
@@ -282,11 +282,10 @@ const About = () => {
                                             style={{ objectFit: "contain", cursor: "pointer" }}
                                         />
                                     </Link>
+                                    <div className='certification-name' style={{ color: "#240752" }}>{certification.name}</div>
                                 </div>
                             ))}
-                            {/* <img src={certificationImg1} alt='certificationImg1' />
-                            <img src={certificationImg2} alt='certificationImg2' />
-                            <img src={certificationImg3} alt='certificationImg3' /> */}
+
                         </div>
                     </div>
                 </div>

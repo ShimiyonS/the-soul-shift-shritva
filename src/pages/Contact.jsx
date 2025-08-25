@@ -3,8 +3,6 @@ import Header from '../Components/Header'
 import '../css/contact.css';
 import phoneIcon from "../images/icons/icon-phone.svg";
 import mailIcon from "../images/icons/icon-mail.svg";
-import locationIcon from "../images/icons/icon-location.svg";
-import clockIcon from "../images/icons/icon-clock.svg";
 import axios from "axios";
 
 const Contact = () => {
@@ -88,7 +86,7 @@ const Contact = () => {
                                 <div className="section-title">
                                     <h3>Contact us</h3>
                                     <h2 className="text-anime-style-2" data-cursor="-opaque">
-                                        Get in touch <span>with us</span>
+                                        Get in touch with us
                                     </h2>
                                     <p className='text-black'>
                                         We're here to support your journey to better health and
@@ -123,7 +121,7 @@ const Contact = () => {
                                         </div>
                                     </div>
 
-                                    <div className="contact-info-item">
+                                    {/* <div className="contact-info-item">
                                         <div className="icon-box">
                                             <img src={locationIcon} alt="location" />
                                         </div>
@@ -141,7 +139,7 @@ const Contact = () => {
                                             <h3>open</h3>
                                             <p className='text-black'>Mon-Sat(09 - 21:00)</p>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 {/* Social Links */}
@@ -179,7 +177,7 @@ const Contact = () => {
                                 {/* Section Title */}
                                 <div className="section-title">
                                     <h2 className="text-anime-style-2" data-cursor="-opaque">
-                                        Send us a <span>message</span>
+                                        Send us a message
                                     </h2>
                                 </div>
 

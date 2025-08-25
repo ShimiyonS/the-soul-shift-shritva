@@ -6,44 +6,42 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     {/* Footer Header */}
-                    <div className="col-lg-12">
-                        <div className="footer-header">
-                            {/* Footer About */}
-                            <div className="footer-about d-flex align-items-center">
-                                {/* Logo */}
-                                <div className="footer-about-text col-lg-6">
-                                    <img src={logo} alt="Logo" />
-                                </div>
-                                <div className="about-footer-content col-lg-4">
-                                    <p>Powered by Intent Shūnyaivāham</p>
-                                </div>
+                    <div className="footer-header col-lg-12">
+                        {/* Footer About */}
+                        <div className="footer-about d-flex align-items-center col-lg-6">
+                            {/* Logo */}
+                            <div className="footer-about-text col-lg-6 ">
+                                <img src={logo} alt="Logo" />
                             </div>
+                            <div className="about-footer-content col-lg-6 ">
+                                <p>Powered by Intent Shūnyaivāham</p>
+                            </div>
+                        </div>
 
-                            {/* Footer Social Links */}
-                            <div className="footer-social-links">
-                                <ul>
-                                    <li>
-                                        <a href="/">
-                                            <i className="social-icons fa-brands fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/">
-                                            <i className="social-icons fa-brands fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/">
-                                            <i className="social-icons fa-brands fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/">
-                                            <i className="social-icons fa-brands fa-youtube"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                        {/* Footer Social Links */}
+                        <div className="footer-social-links col-lg-6">
+                            <ul>
+                                <li>
+                                    <a href="/">
+                                        <i className="social-icons fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <i className="social-icons fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <i className="social-icons fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <i className="social-icons fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -78,7 +76,7 @@ const Footer = () => {
                     </div>
 
                     {/* Contact & Newsletter */}
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 col-md-5">
                         <div className="footer-newsletter-box">
                             <div className="footer-links">
                                 <h3 className="contactus-h3">Contact Us</h3>
