@@ -213,7 +213,7 @@ export const Home = () => {
                                 data-wow-delay="0.8s"
                             >
                                 <Link to="/services" className="btn-default">
-                                    Explore the core themes below
+                                    Explore the core themes
                                 </Link>
                             </div>
                         </div>

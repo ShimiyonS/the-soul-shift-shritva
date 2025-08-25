@@ -11,6 +11,7 @@ import bgImage5 from "../images/images/new-image.png";
 import certificationImg1 from "../images/images/certification1.png"
 import certificationImg2 from "../images/images/certification2.png"
 import certificationImg3 from "../images/images/certification3.png"
+import { Link } from 'react-router-dom';
 
 
 const About = () => {
@@ -272,8 +273,15 @@ const About = () => {
                         <h3 className='text-start pt-5 col-12'>Certifications of Nithya</h3>
                         <div className='w-full images d-flex justify-content-between align-items-center'>
                             {certifications.map((certification, index) => (
-                                <div key={index} className='m-3'>
-                                    <img src={certification.img} alt={`certification ${index + 1}`} />
+                                <div key={index} className="flex-grow-1 mx-2 text-center">
+                                    <Link to="/services">
+                                        <img
+                                            src={certification.img}
+                                            alt={`certification ${index + 1}`}
+                                            className="w-100"
+                                            style={{ objectFit: "contain", cursor: "pointer" }}
+                                        />
+                                    </Link>
                                 </div>
                             ))}
                             {/* <img src={certificationImg1} alt='certificationImg1' />
