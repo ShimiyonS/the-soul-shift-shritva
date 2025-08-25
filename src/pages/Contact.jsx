@@ -1,7 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../Components/Header'
 import '../css/contact.css';
+import phoneIcon from "../images/icons/icon-phone.svg";
+import mailIcon from "../images/icons/icon-mail.svg";
+import locationIcon from "../images/icons/icon-location.svg";
+import clockIcon from "../images/icons/icon-clock.svg";
+import axios from "axios";
+
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        fullName: "",
+        email: "",
+        service: "",
+        message: ""
+    });
+
+    const handleChange = (e) => {
+        console.log(e.target.name, e.target.value);
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        console.log(formData);
+
+        try {
+            const res = await axios.post("http://localhost:8000/api/contact", formData, {
+                headers: { "Content-Type": "application/json" },
+            });
+
+            console.log(res.data);
+            alert(res.data.message);
+        } catch (error) {
+            console.error("❌ Error submitting form:", error);
+            alert("Something went wrong. Please try again.");
+        }
+    };
     return (
         <>
             <Header title='Let us connect' isHome={false} />
@@ -28,7 +63,7 @@ const Contact = () => {
                                 <div className="contact-info-list">
                                     <div className="contact-info-item">
                                         <div className="icon-box">
-                                            <img src="images/icon-phone.svg" alt="phone" />
+                                            <img src={phoneIcon} alt="phone" />
                                         </div>
                                         <div className="contact-item-content">
                                             <h3>contact us</h3>
@@ -40,7 +75,7 @@ const Contact = () => {
 
                                     <div className="contact-info-item">
                                         <div className="icon-box">
-                                            <img src="images/icon-mail.svg" alt="mail" />
+                                            <img src={mailIcon} alt="mail" />
                                         </div>
                                         <div className="contact-item-content">
                                             <h3>email us</h3>
@@ -52,7 +87,7 @@ const Contact = () => {
 
                                     <div className="contact-info-item">
                                         <div className="icon-box">
-                                            <img src="images/icon-location.svg" alt="location" />
+                                            <img src={locationIcon} alt="location" />
                                         </div>
                                         <div className="contact-item-content">
                                             <h3>location</h3>
@@ -62,7 +97,7 @@ const Contact = () => {
 
                                     <div className="contact-info-item">
                                         <div className="icon-box">
-                                            <img src="images/icon-clock.svg" alt="clock" />
+                                            <img src={clockIcon} alt="clock" />
                                         </div>
                                         <div className="contact-item-content">
                                             <h3>open</h3>
@@ -72,27 +107,27 @@ const Contact = () => {
                                 </div>
 
                                 {/* Social Links */}
-                                <div className="contact-social-list">
+                                <div className="contact-social-list footer-social-links">
                                     <h3>Follow On Social :</h3>
                                     <ul>
                                         <li>
-                                            <a href="/" className="social-icon">
-                                                <i className="fa-brands fa-pinterest-p"></i>
+                                            <a href="/">
+                                                <i className="social-icons fa-brands fa-facebook-f"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/" className="social-icon">
-                                                <i className="fa-brands fa-x-twitter"></i>
+                                            <a href="/">
+                                                <i className="social-icons fa-brands fa-instagram"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/" className="social-icon">
-                                                <i className="fa-brands fa-facebook-f"></i>
+                                            <a href="/">
+                                                <i className="social-icons fa-brands fa-linkedin-in"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/" className="social-icon">
-                                                <i className="fa-brands fa-instagram"></i>
+                                            <a href="/">
+                                                <i className="social-icons fa-brands fa-youtube"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -112,30 +147,19 @@ const Contact = () => {
 
                                 {/* Contact Form */}
                                 <div className="contact-form">
-                                    <form id="contactForm" action="#" method="POST">
+                                    <form id="contactForm" onSubmit={handleSubmit}>
                                         <div className="row">
                                             <div className="form-group col-md-6 mb-4">
                                                 <input
                                                     type="text"
-                                                    name="fname"
+                                                    name="fullName"
                                                     className="form-control"
-                                                    id="fname"
-                                                    placeholder="First name"
+                                                    id="fullname"
+                                                    placeholder="Full name"
                                                     required
+                                                    onChange={handleChange}
                                                 />
                                             </div>
-
-                                            <div className="form-group col-md-6 mb-4">
-                                                <input
-                                                    type="text"
-                                                    name="lname"
-                                                    className="form-control"
-                                                    id="lname"
-                                                    placeholder="Last name"
-                                                    required
-                                                />
-                                            </div>
-
                                             <div className="form-group col-md-6 mb-4">
                                                 <input
                                                     type="email"
@@ -144,18 +168,27 @@ const Contact = () => {
                                                     id="email"
                                                     placeholder="E-mail"
                                                     required
+                                                    onChange={handleChange}
                                                 />
                                             </div>
 
-                                            <div className="form-group col-md-6 mb-4">
-                                                <input
-                                                    type="text"
-                                                    name="phone"
+                                            <div className="form-group col-md-12 mb-4">
+                                                <select
+                                                    name="service"
                                                     className="form-control"
-                                                    id="phone"
-                                                    placeholder="Phone"
+                                                    id="service"
                                                     required
-                                                />
+                                                    onChange={handleChange}
+                                                >
+                                                    <option value="Money & Soul Flow">Money & Soul Flow</option>
+                                                    <option value="Sacred Union & Relationship Healing">Sacred Union & Relationship Healing</option>
+                                                    <option value="Wisdom & Energy Realignment">Wisdom & Energy Realignment</option>
+                                                    <option value="Purpose Pathway Activation">Purpose Pathway Activation</option>
+                                                    <option value="Soul Contracts & Awakening">Soul Contracts & Awakening</option>
+                                                    <option value="Family & Lineage Healing">Family & Lineage Healing</option>
+                                                    <option value="Heart Clearing & Emotional Integration">Heart Clearing & Emotional Integration</option>
+                                                    <option value="Boundaries, Visibility & Voice">Boundaries, Visibility & Voice</option>
+                                                </select>
                                             </div>
 
                                             <div className="form-group col-md-12 mb-5">
@@ -165,6 +198,7 @@ const Contact = () => {
                                                     id="message"
                                                     rows="3"
                                                     placeholder="Write Message..."
+                                                    onChange={handleChange}
                                                 ></textarea>
                                             </div>
 
