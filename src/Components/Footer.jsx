@@ -82,10 +82,11 @@ const Footer = () => {
                                 <h3 className="contactus-h3">Contact Us</h3>
                                 <ul>
                                     <li>
-                                        <a href="/">
-                                            Reach me <span style={{ fontStyle: "italic" }}>@</span> The Soul Shift
+                                        <a href="mailto:thesoulshiftoriginal@gmail.com">
+                                            Reach <span style={{ fontStyle: "italic" }}>@</span> The Soul Shift
                                         </a>
                                     </li>
+
                                 </ul>
                             </div>
 

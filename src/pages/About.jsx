@@ -11,7 +11,6 @@ import bgImage5 from "../images/images/new-image.png";
 import certificationImg1 from "../images/images/certification1.png"
 import certificationImg2 from "../images/images/certification2.png"
 import certificationImg3 from "../images/images/certification3.png"
-import { Link } from 'react-router-dom';
 
 
 const About = () => {
