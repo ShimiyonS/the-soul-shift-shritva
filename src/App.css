@@ -7588,6 +7588,62 @@ h2 {
 	}
 }
 
+@media only screen and (max-width: 480px){
+	.new-about-images {
+    padding-left: 0;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Card */
+  .new-about-card {
+    position: relative;  /* remove absolute */
+    bottom: auto;
+    left: auto;
+    width: 100%;          /* make card flexible */
+    max-width: 320px;    /* keep it neat */
+    margin: 20px auto;   /* center card */
+  }
+
+  /* Image Title (make normal text instead of vertical) */
+  .new-about-image-title {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    writing-mode: horizontal-tb;
+    margin-top: 15px;
+    text-align: center;
+    height: auto;
+  }
+
+  .new-about-image-title h2 {
+    font-size: 1.8em;  /* smaller for mobile */
+    -webkit-text-stroke: 0;
+  }
+
+  /* Social Icons */
+  .new-about-card-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .new-about-social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .about-social-icons {
+    font-size: 18px;   /* smaller icons for mobile */
+  }
+}
+
 /* about us css */
 .about-us-container h1 {
 	font-size: 16px;

@@ -121,7 +121,7 @@ const Footer = () => {
                             <div className="footer-privacy-policy">
                                 <ul>
                                     <li><a href="/">Privacy policy</a></li>
-                                    <li><a href="/">Term&apos;s &amp; condition</a></li>
+                                    <li><a href="/">Terms and Conditions</a></li>
                                     <li><a href="/">Help</a></li>
                                 </ul>
                             </div>
