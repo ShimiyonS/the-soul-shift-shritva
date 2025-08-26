@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Header from '../Components/Header'
 import '../css/contact.css';
-import phoneIcon from "../images/icons/icon-phone.svg";
+// import phoneIcon from "../images/icons/icon-phone.svg";
 import mailIcon from "../images/icons/icon-mail.svg";
 import axios from "axios";
 
@@ -105,7 +105,7 @@ const Contact = () => {
 
                                 {/* Contact Info List */}
                                 <div className="contact-info-list">
-                                    <div className="contact-info-item">
+                                    {/* <div className="contact-info-item">
                                         <div className="icon-box">
                                             <img src={phoneIcon} alt="phone" />
                                         </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                                                 <a href="tel:761853398">+(1) 761-853-398</a>
                                             </p>
                                         </div>
-                                    </div>
+                                    </div> */}
 
                                     <div className="contact-info-item">
                                         <div className="icon-box">

@@ -1,6 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from "../images/icons/new_logo3.svg"
+import axios from "axios";
 const Footer = () => {
+    const [email, setEmail] = useState("");
+
+    const handleSubscribe = async (e) => {
+        e.preventDefault();
+
+        if (!email) return alert("Please enter an email");
+
+        try {
+            const apiUrl = process.env.REACT_APP_API_URL;
+            const res = await axios.post(`${apiUrl}/subscribe`, { email });
+
+            alert(res.data.message);
+            console.log(res.data.message)
+            setEmail("")
+        } catch (error) {
+            console.error("Error:", error);
+            alert("Something went wrong. Please try again!");
+        }
+    };
     return (
         <footer className="footer-main">
             <div className="container">
@@ -93,7 +113,7 @@ const Footer = () => {
                             {/* Newsletter */}
                             <div className="newsletter-form">
                                 <h3>Subscribe us </h3>
-                                <form id="newsletterForm" action="/" method="POST">
+                                <form id="newsletterForm" onSubmit={handleSubscribe}>
                                     <div className="form-group d-flex gap-3">
                                         <input
                                             type="email"
@@ -102,6 +122,8 @@ const Footer = () => {
                                             id="mail"
                                             placeholder="Enter Your Email"
                                             required
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
                                         ></input>
                                         <button type="submit" className="newsletter-btn">
                                             <i className="fa-solid fa-paper-plane"></i>
