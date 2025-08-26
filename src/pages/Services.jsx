@@ -222,14 +222,13 @@ const Services = () => {
                 <div className="tool-techlonogy">
                     <div className="col-lg-7 order-lg-1 order-2">
                         <h3 className="wow fadeInUp">Sacred Tools & Teachings</h3>
-                        <h2 className="text-anime-style-2" data-cursor="-opaque">
+                        <h2 className="text-anime-style-2 pt-3">
                             To seed The A.R.E. Life or other wisdom streams
                         </h2>
                     </div>
 
                     <p
-                        className="col-lg-5 order-lg-2 fadeInUp"
-                        data-wow-delay="0.2s"
+                        className="col-lg-5 order-lg-2 pt-3"
                     >
                         Nithya’s work is rooted in timeless spiritual wisdom and
                         multidimensional soul technologies — each designed to awaken the
@@ -237,7 +236,7 @@ const Services = () => {
                     </p>
                 </div>
 
-                <div className="col-lg-12 order-3">
+                <div className="col-lg-12 order-3 pt-2"  >
                     {/* What We Benefits Box Start */}
                     <div className="what-we-benefits-box">
                         {/* What We Benefits List Start */}
