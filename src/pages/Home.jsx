@@ -341,7 +341,7 @@ export const Home = () => {
                     <div className="row section-row align-items-center overlay-image">
                         <img src={bgImage2} alt="" />
                         <div className="col-lg-12 overlay-image-container">
-                            <h2 className="text-anime-style-2" data-cursor="-opaque">
+                            <h2 className="text-anime-style-2" >
                                 Your healing begins with a simple yes
                             </h2>
                             <h3>
@@ -637,7 +637,7 @@ export const Home = () => {
             <section className="text-center text-white">
                 <div className="section-row align-items-center bg-overlay-image" style={{ margin: 0 }}>
                     {/* Background Image */}
-                    <img src={image5} alt="Soul Shift" />
+                    <img src={image5} alt="Soul Shift" className='bg-overlay-image-2'/>
 
                     {/* Overlay Content */}
                     <div className="col-lg-12 overlay-image-container-2">
@@ -663,8 +663,8 @@ export const Home = () => {
 
             <div className="our-blog">
                 <div className="container">
-                    <div className="row section-row align-items-center col-lg-12 col-md-12">
-                        <div className="col-lg-6 col-md-6">
+                    <div className="row section-row align-items-center col-lg-12 col-md-12 col-sm-12 blog-section-container">
+                        <div className="col-lg-6 col-md-6 col-sm-4 col-6">
                             {/* Section Title Start */}
                             <div className="section-title">
                                 <h3 className="wow fadeInUp">Latest blog</h3>
@@ -675,7 +675,7 @@ export const Home = () => {
                             {/* Section Title End */}
                         </div>
 
-                        <div className="col-lg-6 col-md-6 text-align-right">
+                        <div className="col-lg-6 col-md-6 col-sm-6 col-6 text-align-right">
                             {/* Section Title Content Start */}
                             <div className="section-btn wow fadeInUp" style={{ textAlign: "right" }} data-wow-delay="0.2s">
                                 <a href="blogs" className="btn-default">
