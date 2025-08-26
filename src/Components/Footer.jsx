@@ -103,7 +103,7 @@ const Footer = () => {
                                 <ul>
                                     <li>
                                         <a href="mailto:thesoulshiftoriginal@gmail.com">
-                                            Reach <span style={{ fontStyle: "italic" }}>@</span> The Soul Shift
+                                            Reach@shritva.com
                                         </a>
                                     </li>
 

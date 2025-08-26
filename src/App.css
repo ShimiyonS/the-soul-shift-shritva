@@ -7592,9 +7592,16 @@ h2 {
 }
 
 @media only screen and (max-width: 480px) {
-	.header-contact-btn{
+
+	.inner-hero {
+		min-height: 60vh;
+		padding: 230px 0px 110px;
+	}
+
+	.header-contact-btn {
 		display: none;
 	}
+
 	.new-about-images {
 		max-width: 100%;
 		padding-left: 10px;
@@ -7644,6 +7651,10 @@ h2 {
 		margin-top: 15px;
 		text-align: center;
 		height: auto;
+	}
+
+	.footer-links h3 {
+		font-size: 22px;
 	}
 
 	.new-about-image-title h2 {
@@ -7755,33 +7766,39 @@ h2 {
 	.section-btn {
 		margin-top: 0;
 	}
-	.overlay-image-text{
+
+	.overlay-image-text {
 		padding-left: 2rem !important;
 		padding-right: 2rem !important;
 	}
-	.overlay-image-text p{
+
+	.overlay-image-text p {
 		font-size: 6px !important;
 		line-height: 2 !important;
 	}
-	.overlay-image-container-img{
+
+	.overlay-image-container-img {
 		min-height: 150px;
 	}
-	.service-content{
+
+	.service-content {
 		margin: 5px 0 5px 0;
 	}
-	.service-content h3{
+
+	.service-content h3 {
 		margin-bottom: 0px;
 		min-height: 30px;
 	}
-	.service-header{
+
+	.service-header {
 		margin-bottom: 15px;
 	}
-	.service-content p{
+
+	.service-content p {
 		font-size: 10px;
 	}
-	.blog-image{
 
-	}
+	.blog-image {}
 }
 
 /* about us css */
@@ -8070,6 +8087,7 @@ h2 {
 .certification .certification-name {
 	font-family: "Montserrat", sans-serif;
 }
-.bg-overlay-image-2{
+
+.bg-overlay-image-2 {
 	width: 100%;
 }
