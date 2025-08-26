@@ -5,7 +5,7 @@ import bgimage1 from "../images/images/about-us-img-2.jpg"
 import bgimage2 from "../images/images/about-us-img-3.jpg"
 import bgImage4 from "../images/images/about-us-img-4.jpg"
 // import bgImage5 from "../images/images/about-us-img-5.jpg";
-import bgImage5 from "../images/images/new-image.png";
+// import bgImage5 from "../images/images/new-image.png";
 import bgImage2 from "../images/images/bg-image.png"
 
 
@@ -112,7 +112,7 @@ const About = () => {
             <div className="why-choose-us why-choose-us-container" style={{ padding: "0px" }}>
                 <div>
                     <div className="row section-row align-items-center overlay-image">
-                        <img src={bgimage1} alt="About Us" className='' />
+                        <img src={bgimage1} alt="About Us" className='overlay-image-container-img' />
                         <div className="col-lg-12 overlay-image-container">
                             <div className="col-lg-12 overlay-image-container px-8 overlay-image-text">
                                 <p>
