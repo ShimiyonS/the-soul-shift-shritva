@@ -7591,6 +7591,9 @@ h2 {
 }
 
 @media only screen and (max-width: 480px) {
+	.header-contact-btn{
+		display: none;
+	}
 	.new-about-images {
 		max-width: 100%;
 		padding-left: 10px;
@@ -7943,7 +7946,7 @@ h2 {
 	width: 25px;
 	height: 3px;
 	margin: 5px 0;
-	background-color: #333;
+	background-color: #ffffff;
 	transition: all 0.3s ease;
 }
 
@@ -7965,7 +7968,7 @@ h2 {
 /* --- Responsive Menu --- */
 .responsive-menu {
 	display: none;
-	background: #3D493A;
+	background: #240752;
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -8011,7 +8014,7 @@ h2 {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.4s ease;
-	background: #3D493A;
+	background: #240752;
 }
 
 .has-submenu.open .submenu {

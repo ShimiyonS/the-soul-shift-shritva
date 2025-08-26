@@ -91,7 +91,8 @@ export const Home = () => {
 
                 subtitle="Powered by Intent Shūnyaivāham"
 
-                title="Transformation From The Core"
+                title="Being Your True Essence"
+
                 description="Where healing is not becoming more, but remembering who you truly are. Step into a sacred space of stillness, soul remembrance, and deep energetic transformation."
                 buttons={[
                     { label: "Begin Your Journey", link: "/services" },

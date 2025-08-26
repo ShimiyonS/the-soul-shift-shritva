@@ -69,20 +69,10 @@ const Header = ({ title, subtitle, description, buttons = [], isHome = false }) 
                             <li className="nav-item">
                                 <a className="nav-link" href="/about">About</a>
                             </li>
-                            {/* Example Submenu */}
-                            <li className={`nav-item has-submenu ${openSubmenu === 1 ? "open" : ""}`}>
-                                <button
-                                    className="nav-link submenu-toggle"
-                                    onClick={() => toggleSubmenu(1)}
-                                >
-                                    Services <span className="submenu-arrow">{openSubmenu === 1 ? "▲" : "▼"}</span>
-                                </button>
-                                <ul className="submenu">
-                                    <li><a href="/services/yoga">Yoga</a></li>
-                                    <li><a href="/services/meditation">Meditation</a></li>
-                                    <li><a href="/services/healing">Healing</a></li>
-                                </ul>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/services">Services</a>
                             </li>
+                            
 
                             <li className="nav-item">
                                 <a className="nav-link" href="/blogs">Blogs</a>
