@@ -5273,7 +5273,7 @@ h2 {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5em;
-	color: var(--text-color);
+	color: black;
 	background-color: var(--white-color);
 	border: 1px solid var(--divider-color);
 	border-radius: 10px;
@@ -6902,10 +6902,20 @@ h2 {
 
 	.why-choose-counter-item {
 		width: calc(50% - 15px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.why-choose-counter-item .icon-box img {
 		max-width: 30px;
+	}
+
+	.why-choose-counter-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
 
 	.why-choose-counter-content h3 {
@@ -7723,7 +7733,7 @@ h2 {
 	}
 
 	p {
-		font-size: 10px;
+		font-size: 16px;
 	}
 
 	.tool-techlonogy {
@@ -7751,11 +7761,11 @@ h2 {
 	}
 
 	.section-title h3 {
-		font-size: 10px;
+		font-size: 18px;
 	}
 
-	.section-title h2 {
-		font-size: 12px;
+	.certification-name {
+		font-size: 8px !important;
 	}
 
 	.blog-section-container {
