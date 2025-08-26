@@ -69,7 +69,7 @@ const Header = ({ title, subtitle, description, buttons = [], isHome = false }) 
                             <li className="nav-item">
                                 <a className="nav-link" href="/services">Services</a>
                             </li>
-                            
+
 
                             <li className="nav-item">
                                 <a className="nav-link" href="/blogs">Blogs</a>
@@ -94,12 +94,8 @@ const Header = ({ title, subtitle, description, buttons = [], isHome = false }) 
                                 <div className="hero-content">
                                     {/* Section Title Start */}
                                     <div className="section-title">
+                                        <h1 className="">{title}</h1>
                                         <h3 className="">{subtitle}</h3>
-                                        <h1
-                                            className=""
-                                        >
-                                            {title}
-                                        </h1>
                                         <p className="">
                                             {description}
                                         </p>
