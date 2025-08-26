@@ -51,7 +51,7 @@ const BlogDetails = () => {
                             }
                             if (blog.type === "ul") {
                                 return (
-                                    <ul key={index} className="list-disc list-inside space-y-1 blog-ul">
+                                    <ul key={index} className="list-disc list-inside space-y-2 blog-ul">
                                         {blog.items.map((item, i) => (
                                             <li key={i} className="text-lg">{item}</li>
                                         ))}
@@ -77,12 +77,12 @@ const BlogDetails = () => {
                 <div className="blog-navigation">
                     {prevBlog ? (
                         <Link to={`/blog/${prevBlog.id}`} className="nav-btn prev-btn">
-                            ← {prevBlog.title}
+                            ← Prev Blog
                         </Link>
                     ) : <div></div>}
                     {nextBlog ? (
                         <Link to={`/blog/${nextBlog.id}`} className="nav-btn next-btn">
-                            {nextBlog.title} →
+                            Next Blog →
                         </Link>
                     ) : <div></div>}
                 </div>

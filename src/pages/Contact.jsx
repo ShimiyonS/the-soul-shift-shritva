@@ -155,16 +155,16 @@ const Contact = () => {
                                     <h3>Follow On Social :</h3>
                                     <ul>
                                         <li>
-                                            <a href="/">
+                                            <a href="https://www.facebook.com/thesoulshiftoriginal">
                                                 <i className="social-icons fa-brands fa-facebook-f"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/">
+                                            <a href="https://www.instagram.com/thesoulshift.world">
                                                 <i className="social-icons fa-brands fa-instagram"></i>
                                             </a>
                                         </li>
-                                        <li>
+                                        {/* <li>
                                             <a href="/">
                                                 <i className="social-icons fa-brands fa-linkedin-in"></i>
                                             </a>
@@ -173,7 +173,7 @@ const Contact = () => {
                                             <a href="/">
                                                 <i className="social-icons fa-brands fa-youtube"></i>
                                             </a>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 </div>
                             </div>
