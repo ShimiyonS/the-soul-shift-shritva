@@ -124,7 +124,7 @@ const Contact = () => {
                                         <div className="contact-item-content">
                                             <h3>email us</h3>
                                             <p className='text-black'>
-                                                <a href="mailto:info@domain.com">info@domain.com</a>
+                                                <a href="mailto:Reach@shritva.com">Reach@shritva.com</a>
                                             </p>
                                         </div>
                                     </div>

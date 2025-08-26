@@ -64,7 +64,7 @@ const Header = ({ title, subtitle, description, buttons = [], isHome = false }) 
                                 <a className="nav-link" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/about">About</a>
+                                <a className="nav-link" href="/about">About Us</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/services">Services</a>
