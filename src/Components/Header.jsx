@@ -4,13 +4,10 @@ import logo from "../images/icons/new_logo3.svg";
 
 const Header = ({ title, subtitle, description, buttons = [], isHome = false }) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [openSubmenu, setOpenSubmenu] = useState(null);
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
-    const toggleSubmenu = (index) => {
-        setOpenSubmenu(openSubmenu === index ? null : index);
-    };
+
     return (
         <>
             {/* Header Start */}
