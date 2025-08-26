@@ -33,7 +33,7 @@ const Footer = () => {
                             <div className="footer-about-text col-lg-6 ">
                                 <img src={logo} alt="Logo" />
                             </div>
-                            <div className="about-footer-content col-lg-6 ">
+                            <div className="about-footer-content col-lg-6 p-1">
                                 <p>Powered by Intent Shūnyaivāham</p>
                             </div>
                         </div>
@@ -42,16 +42,16 @@ const Footer = () => {
                         <div className="footer-social-links col-lg-6">
                             <ul>
                                 <li>
-                                    <a href="/">
+                                    <a href="https://www.facebook.com/thesoulshiftoriginal">
                                         <i className="social-icons fa-brands fa-facebook-f"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/">
+                                    <a href="https://www.instagram.com/thesoulshift.world">
                                         <i className="social-icons fa-brands fa-instagram"></i>
                                     </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a href="/">
                                         <i className="social-icons fa-brands fa-linkedin-in"></i>
                                     </a>
@@ -60,7 +60,7 @@ const Footer = () => {
                                     <a href="/">
                                         <i className="social-icons fa-brands fa-youtube"></i>
                                     </a>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
@@ -102,7 +102,7 @@ const Footer = () => {
                                 <h3 className="contactus-h3">Contact Us</h3>
                                 <ul>
                                     <li>
-                                        <a href="mailto:thesoulshiftoriginal@gmail.com">
+                                        <a href="mailto:Reach@shritva.com">
                                             Reach@shritva.com
                                         </a>
                                     </li>

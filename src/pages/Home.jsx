@@ -112,23 +112,21 @@ export const Home = () => {
 
                                     <div className="new-about-card-social">
                                         <span>
-                                            Follow me
-                                            <br />
-                                            On Social :
+                                            Follow me On Social :
                                         </span>
                                         <div className="new-about-social-icons">
-                                            <a href="/">
+                                            <a href="https://www.facebook.com/thesoulshiftoriginal">
                                                 <i className="about-social-icons fa-brands fa-facebook-f"></i>
                                             </a>
-                                            <a href="/">
+                                            <a href="https://www.instagram.com/thesoulshift.world">
                                                 <i className="about-social-icons fa-brands fa-instagram"></i>
                                             </a>
-                                            <a href="/">
+                                            {/* <a href="/">
                                                 <i className="about-social-icons fa-brands fa-linkedin-in"></i>
                                             </a>
                                             <a href="/">
                                                 <i className="about-social-icons fa-brands fa-youtube"></i>
-                                            </a>
+                                            </a> */}
                                         </div>
                                     </div>
                                 </div>
@@ -269,9 +267,7 @@ export const Home = () => {
                                     Explore the core themes below
                                 </h2>
                                 <h2
-                                    className="text-anime-style-2"
-                                    data-cursor="-opaque"
-                                    data-wow-delay="0.4s"
+                                    className="text-anime-style-2 pt-2"
                                 >
                                     Each is a doorway into your healing journey.
                                 </h2>
@@ -430,14 +426,13 @@ export const Home = () => {
                 <div className="tool-techlonogy">
                     <div className="col-lg-7 order-lg-1 order-2">
                         <h3 className="wow fadeInUp">Sacred Tools & Teachings</h3>
-                        <h2 className="text-anime-style-2" data-cursor="-opaque">
+                        <h2 className="text-anime-style-2 pt-3" data-cursor="-opaque">
                             To seed The A.R.E. Life or other wisdom streams
                         </h2>
                     </div>
 
                     <p
-                        className="col-lg-5 order-lg-2 fadeInUp"
-                        data-wow-delay="0.2s"
+                        className="col-lg-5 order-lg-2 pt-3"
                     >
                         Nithya’s work is rooted in timeless spiritual wisdom and
                         multidimensional soul technologies — each designed to awaken the
@@ -667,7 +662,7 @@ export const Home = () => {
                             {/* Section Title Start */}
                             <div className="section-title">
                                 <h3 className="wow fadeInUp">Latest blog</h3>
-                                <h2 className="" data-cursor="">
+                                <h2 className=" blog-container-home-title">
                                     Explore our latest
                                 </h2>
                             </div>
