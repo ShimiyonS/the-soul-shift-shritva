@@ -16,10 +16,18 @@ const Contact = () => {
     const [errors, setErrors] = useState({});
 
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
 
-        // Clear error for the field when user starts typing
-        setErrors({ ...errors, [e.target.name]: "" });
+        const { name, value } = e.target;
+
+        if (name === "fullName") {
+            // Allow only alphabets and spaces
+            const regex = /^[a-zA-Z\s]*$/;
+            console.log(!regex.test(value))
+            if (!regex.test(value)) return; // Block invalid input
+        }
+
+        setFormData({ ...formData, [name]: value });
+        setErrors({ ...errors, [name]: "" });
     };
 
     const validate = () => {
